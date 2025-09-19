@@ -1,0 +1,59 @@
+
+# IDE-Specific Project Files
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+/.vscode/launch.json
+.atom/
+
+# Environment Variables & Secret Files
+.env
+/firebase.json
+/firebase_options.dart
+/lib/firebase_options.dart
+/devtools_options.yaml
+
+# OS-Specific Files
+.DS_Store
+
+# Build Outputs & Temporary Build Folders
+/build/
+/android/app/debug
+/android/app/profile
+/android/app/release
+.build/
+/.buildlog/
+
+# Generated Flutter & Dart Tool Files
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+
+# Project Metadata
+.metadata
+
+# Generated Docs
+**/doc/api/
+
+# iOS Build Helper & Last Build Marker
+**/ios/Flutter/.last_build_id
+
+# App Symbol & Map Artifacts
+app.*.symbols
+app.*.map.json
+
+# Binary / Compiled / Temp Files
+*.class
+*.pyc
+*.log
+*.swp
+
+# Project History / Migration / VCS Junk
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
