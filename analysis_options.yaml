@@ -1,0 +1,56 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+linter:
+  rules:
+    # Enforced
+    avoid_print: true                             # Centralized Logger
+    avoid_dynamic_calls: true                     # Static Type Safety
+    always_use_package_imports: true              # Package-style Imports Everywhere
+    prefer_final_locals: true                     # Immutable Local Variables
+    prefer_const_constructors: true               # Compile-time Const Constructors
+    require_trailing_commas: true                 # Trailing Commas Formatting
+    unnecessary_this: true                        # Redundant 'this' References
+    use_super_parameters: true                    # Super Parameter Forwarding
+    prefer_single_quotes: true                    # Single Quote Literals
+    avoid_unnecessary_containers: true            # Unnecessary Wrapper Containers
+    avoid_redundant_argument_values: true         # Redundant Default Argument Values
+
+    # Disabled 
+    sort_pub_dependencies: false                  # Alphabetical Sorting
+    directives_ordering: false                    # Import Ordering
+    sort_constructors_first: false                # Constructor Ordering       
+    public_member_api_docs: false                 # Public Documentation
+    prefer_expression_function_bodies: false      # Block Function Bodies
+    flutter_style_todos: false                    # Todo Style
+    lines_longer_than_80_chars: false             # Longer Line Lengths
+    no_default_cases: false                       # Default Switch Cases
+    avoid_catches_without_on_clauses: false       # Generic Catch Clauses
+    cascade_invocations: false                    # Cascade Usage
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"                               # Exclude Generated Code Files
+    - "**/*.freezed.dart"                         # Exclude Freezed Generated Files
+    - "**/*.mocks.dart"                           # Exclude Mock Implementation Files
+    
+  strong-mode:
+    implicit-casts: false                         # Implicit Type Casting Forbidden
+    implicit-dynamic: false                       # Implicit Dynamic Types Forbidden
+
+  # Ignored 
+  errors:
+    comment_references: ignore                             # Comment Reference Warnings
+    dangling_library_doc_comments: ignore                  # Dangling Library Docs
+    avoid_positional_boolean_parameters: ignore            # Positional Boolean Parameters
+    depend_on_referenced_packages: ignore                  # Referenced Package Dependencies
+    inference_failure_on_function_invocation: ignore       # Type Inference Failures
+    invalid_annotation_target: ignore                      # Invalid Annotation Targets
+    invalid_use_of_visible_for_testing_member: ignore      # VisibleForTesting Usages
+    library_private_types_in_public_api: ignore            # Private Types In Public
+    no_runtimetype_tostring: ignore                        # runtimeType.toString() Usage
+    sort_unnamed_constructors_first: ignore                # Unnamed Constructor Ordering
+    unintended_html_in_doc_comment: ignore                 # HTML In Doc Comments
+    type_literal_in_constant_pattern: ignore               # Type Literals In Patterns
+    unnecessary_lambdas: ignore                            # Lambda Expression Usage
+    no_leading_underscores_for_local_identifiers: ignore   # Leading Underscores In Locals
+    prefer_if_elements_to_conditional_expressions: ignore  # If or Ternary Preference
