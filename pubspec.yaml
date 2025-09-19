@@ -1,0 +1,133 @@
+#############################################################################################################
+
+name: case_study_clean_architecture_project
+description: "Clean Architecture Flutter showcase project, with BLoC State Management, GetIt Dependency Injection, GoRouter Navigation, JWT Authentication, Firebase Crashlytics & Analytics, localization, theming and modular UI with Lottie."
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0                       # Dart Lint Ruleset
+  very_good_analysis: ^9.0.0                  # Strict-Enforced Lint Ruleset
+  flutter_native_splash: ^2.4.6               # Native Splash Screen Generator
+  flutter_launcher_icons: ^0.14.4             # App Icon Generator
+  build_runner: ^2.7.0                        # Dart Code Generator
+  flutter_gen_runner:                         # Codegen for Asset Access
+  json_serializable: ^6.10.0                  # Codegen for Serialization
+  freezed: ^3.2.0                             # Immutable Union/Sealed Model Generator
+    
+dependencies:
+  flutter:
+    sdk: flutter
+
+#############################################################################################################
+    
+  flutter_bloc: ^9.1.1                        # State Management Solution
+  get_it: ^8.2.0                              # Dependency Injection Service
+  go_router: ^16.2.0                          # Navigation Service
+  dio: ^5.8.0+1                               # HTTP Networking Service
+  fpdart: ^1.1.1                              # Functional Programming Service
+  freezed_annotation: ^3.1.0                  # Immutable Union/Sealed Class Generator
+  json_annotation: ^4.9.0                     # JSON Serialization Generator
+  bloc_concurrency: ^0.3.0                    # Event Concurrency Handler
+  flutter_hooks: ^0.21.3+1                    # State Lifecycle Hooks
+  flutter_screenutil: ^5.9.3                  # Responsive & Adaptive Designs
+  flutter_secure_storage: ^9.2.4              # Secure Token Management Service
+  hive_flutter: ^1.1.0                        # Local Storage Service
+
+  firebase_core: ^4.0.0                       # Firebase Services | Root
+  firebase_analytics: ^12.0.0                 # Firebase Analytics Service
+  firebase_crashlytics: ^5.0.0                # Firebase Crashlytics Service        
+  
+  lottie: ^3.3.1                              # Optimized JSON Animations
+  flutter_dotenv: ^5.2.1                      # Environment Variable Service
+  easy_localization: ^3.0.8                   # Localization Service
+  cached_network_image: ^3.4.1                # Image Caching Service
+  image: ^4.5.4                               # Image Processing Service
+  image_picker: ^1.2.0                        # Upload from Gallery Functionality
+  flutter_svg: ^2.0.13                        # SVG Icon Viewer
+  flutter_animate: ^4.5.2                     # Advanced Animation Builder
+  animations: ^2.0.11                         # Custom Animation Builder
+  readmore: ^3.0.0                            # Expandable Text Builder
+  flutter_spinkit: ^5.2.2                     # ProgressBar Animations
+  cupertino_icons: ^1.0.6                     # Icon Pack Library
+  tabler_icons: ^2.5.0+1                      # Icon Pack Library
+  inner_shadow_widget: ^0.0.3                 # Inner Shadow UI Effect
+  url_launcher: ^6.3.2                        # External Link Launcher
+  toastification: ^3.0.3                      # Custom Toast Notifications
+  card_swiper: ^3.0.1                         # Carousel & Swiper Widget
+  internet_connection_checker_plus: ^2.8.0    # Network Connectivity Checker
+  path_provider: ^2.1.5                       # Device File Directory Access
+  path: ^1.9.1                                # File Path Utility Helper
+  intl: ^0.20.2                               # Internationalization Helper
+  uuid: ^4.5.1                                # Unique ID Generator
+
+#############################################################################################################
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/lottie/
+    - assets/fonts/
+    - assets/translations/
+    - .env
+
+  fonts:
+    - family: EuclidCircularA
+      fonts:
+        - asset: assets/fonts/Euclid-Circular-A-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Euclid-Circular-A-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Euclid-Circular-A-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Euclid-Circular-A-Bold.ttf
+          weight: 700
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Montserrat-Black.ttf
+          weight: 900
+          
+flutter_gen:
+  output: lib/core/utilities/
+  fonts:
+    enabled: false
+  assets:
+    enabled: true
+    exclude:
+      - assets/fonts/**
+      - assets/translations/**
+      - .env           
+
+#############################################################################################################
+
+flutter_native_splash:
+  color: "#030203"
+  color_dark: "#030203"
+  image: assets/images/splash_screen.png
+  branding: assets/images/splash_screen.png
+  image_dark: assets/images/splash_screen.png
+  branding_dark: assets/images/splash_screen.png
+  fullscreen: true
+
+  android_12:
+    icon_background_color: "#030203"
+    icon_background_color_dark: "#030203"
+    image: assets/images/splash_screen.png
+    image_dark: assets/images/splash_screen.png
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  min_sdk_android: 21
+
+#############################################################################################################
