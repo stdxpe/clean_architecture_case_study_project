@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "343789576080",
+    "project_id": "case-study-clean-archite-62c0b",
+    "storage_bucket": "case-study-clean-archite-62c0b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343789576080:android:1dcd54b811f57b07c71d15",
+        "android_client_info": {
+          "package_name": "com.yasinbilgin.case_study_clean_architecture_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgHIXbQP6y64SBgPQwg3O9SG0J6V_wbCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
